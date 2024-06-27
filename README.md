@@ -588,8 +588,8 @@ The `model` parameter can be one of the following values:
 
 ### Channels
 
-The `channels` parameter can be either:
-(1) any Query String parameter, or 
+The `channels` parameter can include:
+(1) any Query String parameter, and 
 (2) any of the standard channels, which include:
 - `source`
 - `medium`
