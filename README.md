@@ -1,20 +1,3 @@
-### Attribution Models
-
-`model` can be one of the following:
-
-- **equal**: Distributes the credit for a conversion equally across all touchpoints in the customer journey.
-
-- **firsttouch**: Assigns 100% of the credit for a conversion to the first touchpoint in the customer journey.
-
-- **lasttouch**: Assigns 100% of the credit for a conversion to the last touchpoint in the customer journey.
-
-- **firstandlasttouch**: Splits the credit for a conversion between the first and the last touchpoints in the customer journey.
-
-- **any**: Assigns credit to any touchpoint in the customer journey that contributed to the conversion.
-
-- **path**: Shows the path for the conversion, detailing all the touchpoints in the customer journey.
-
-
 ### Report Types and Their Inputs
 
 1. **get_pageviews_and_sessions_and_visitors_by_channel_by_date_range**
@@ -587,3 +570,51 @@
     - `model` (string)
     - `cutoff_in_minutes` (integer)
 
+### Attribution Models
+
+The `model` parameter can be one of the following values:
+
+- **equal**: Distributes the credit for a conversion equally across all touchpoints in the customer journey.
+
+- **firsttouch**: Assigns 100% of the credit for a conversion to the first touchpoint in the customer journey.
+
+- **lasttouch**: Assigns 100% of the credit for a conversion to the last touchpoint in the customer journey.
+
+- **firstandlasttouch**: Splits the credit for a conversion between the first and the last touchpoints in the customer journey.
+
+- **any**: Assigns credit to any touchpoint in the customer journey that contributed to the conversion.
+
+- **path**: Shows the path for the conversion, detailing all the touchpoints in the customer journey.
+
+### Channels
+
+The `channels` parameter can be either:
+(1) any Query String parameter, or 
+(2) any of the standard channels, which include:
+- `source`
+- `medium`
+- `campaign`
+- `lastreferrerdomain`
+- `content`
+- `term`
+- `browsername`
+- `browserversion`
+- `browserosversion`
+- `browserplatformtype`
+- `browserplatformvendor`
+- `postalcode`
+- `country`
+- `region`
+- `city`
+- `ad_id`
+- `attribution_date`
+- `attribution_year`
+- `attribution_month`
+- `attribution_quarter`
+- `attribution_week`
+- `attribution_quarter_of_year`
+- `attribution_month_of_year`
+- `attribution_day_of_year`
+- `attribution_day_of_month`
+- `attribution_week_of_year`
+- `attribution_day_of_week`
