@@ -1,4 +1,4 @@
-### Report Types and Their Inputs
+### Report Types and Their Inputs 
 
 1. **get_pageviews_and_sessions_and_visitors_by_channel_by_date_range**
    - Retrieves pageviews, sessions, and visitors segmented by specified channels within a date range.
